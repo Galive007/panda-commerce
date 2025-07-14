@@ -3,3 +3,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* font style */
+.inter-font {
+  font-family: "Inter", sans-serif;
+}
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+}
+/* common style */
+
+
+
+/* header section */
+
+/* nav */
+.container{
+  max-width: 1125px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 56px;
+}
+.search-parent{
+  position: relative;
+}
+.search-parent input{
+  padding: 12px;
+  width: 390px;
+  border-radius: 66px;
+  background-color: #F1F1F1;
+  border: none;
+}
+.search-parent i{
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  color: #BABABA;
+}
+.search-parent i:hover{
+  color: black;
+}
+
+.nav-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+}
+.nav-items li a{
+  text-decoration: none;
+  color: #707070;
+  font-size: 16px;
+  font-weight: 400;
+}
+.nav-items li a:hover{
+  color: #1F1F1F;
+}
