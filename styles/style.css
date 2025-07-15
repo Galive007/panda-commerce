@@ -12,18 +12,21 @@
 }
 /* common style */
 
-
+.color-bg{
+  background-color: #FEEAE9;
+}
 
 /* header section */
 
 /* nav */
 .container{
   max-width: 1125px;
-  margin: 50px auto;
+  margin:  auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 56px;
+  padding: 20px 0;
 }
 .search-parent{
   position: relative;
@@ -58,6 +61,18 @@
   font-size: 16px;
   font-weight: 400;
 }
+/* .nav-items input::after{
+  border: none;
+} */
 .nav-items li a:hover{
   color: #1F1F1F;
+}
+/* banner section */
+.banner{
+  max-width: 1225px;
+  margin: auto;
+  padding: 45px 65px;
+}
+.banner-img{
+
 }
