@@ -191,7 +191,6 @@ nav{
 }
 .img-card{
   width: 300px;
-  height: 202px;
 }
 .img-card img{
   width: 100%;
@@ -222,16 +221,74 @@ nav{
   color: #FFF;
   margin-top: 16px;
   border: none;
+  transition: 0.5s;
 }
 .card-btn:hover{
   background: var(--Linear, linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%));
-  transition: 0.5s;
+  
   transform: scaleX(1.2);
 }
 /* backpack section */
   .backpack{
     padding-bottom: 95px;
   }
+/* footer section */
+footer{
+  background: #FFF;
+  padding: 75px 0;
+}
+.footer-container{
+  background: #FFF2F1;
+  width: 1212px;
+  margin: auto;
+  padding: 145px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+}
+.footer-content h5{
+  color: #1F1F1F;
+  font-size: 30px;
+  font-weight: 600;
+}
+.footer-content p{
+  color: #707070;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-input{
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+.footer-input input[type="email"]{
+  border-radius: 10px 0 0 10px;
+  width: 583px;
+  height: 53px;
+  border: none;
+  padding: 22px 35px;
+  color: #CCC;
+  font-size: 24px;
+  font-weight: 400;
+}
+.footer-input button{
+  background: linear-gradient(180deg, #FF589B 0%, #FF136F 100%);
+  border-radius: 0 10px 10px 0;
+  padding: 9px 30px;
+  cursor: pointer;
+  border: none;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+}
+.footer-input button:hover{
+  background: #000;
+  transition: 0.5s;
+}
+
+
 
 
 
@@ -295,6 +352,32 @@ nav{
     flex-direction: column;
     margin: 0 20px;
   }
+  .img-card {
+    width: auto;
+    height: auto;
+  }
+  .backpack {
+    padding-bottom: 50px;
+  }
+  /* footer section */
+  footer {
+  padding: 35px 0;
+}
+  .footer-container {
+    width: auto;
+    padding: 50px 12px
+  }
+  .footer-input {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-input input[type="email"] {
+    width: calc( 100% - 40px );
+    border-radius: 10px;
+  }
+  .footer-input button {
+    border-radius: 10px;
+  }
   
 
 }
@@ -343,7 +426,16 @@ nav{
     flex-direction: column;
     margin: 0 20px;
   }
+  
   .img-card {
     margin: 0 auto;
+  }
+  /* footer section */
+  .footer-container {
+    width: auto;
+    padding: 113px 0;
+  }
+  .footer-input input[type="email"] {
+    width: auto;
   }
 }
