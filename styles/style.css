@@ -30,6 +30,7 @@
 }
 .primary-btn:hover{
   background: #000;
+  transition: 0.5s;
 }
 
 /* header section */
@@ -166,17 +167,71 @@ nav{
 .shoes{
   padding: 45px 0 95px;
 }
-.position{
+.product{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
 }
-.position p{
+.product p{
   color: #FF9D00;
   font-size: 20px;
   font-weight: 400;
 }
-
-
+/*  shoes card section */
+.products{
+  display: flex;
+  gap: 15px;
+}
+.products-card{
+  border-radius: 20px;
+  background: #FFF;
+  text-align: center;
+  padding: 24px;
+}
+.img-card{
+  width: 300px;
+  height: 202px;
+}
+.img-card img{
+  width: 100%;
+}
+.card-tittle{
+  color: #1F1F1F;
+  font-size: 22px;
+  font-weight: 600;
+}
+.card-description{
+  color: #4E4E4E;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 16px 0;
+}
+.card-cost{
+  display: block;
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+}
+.card-btn{
+  cursor: pointer;
+  border-radius: 6px;
+  background: #000;
+  padding: 14px 20px;
+  gap: 10px;
+  color: #FFF;
+  margin-top: 16px;
+  border: none;
+}
+.card-btn:hover{
+  background: var(--Linear, linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%));
+  transition: 0.5s;
+  transform: scaleX(1.2);
+}
+/* backpack section */
+  .backpack{
+    padding-bottom: 95px;
+  }
 
 
 
@@ -232,7 +287,15 @@ nav{
   .card{
     width: 100%;
   }
-
+  /* shoes products */
+  .product {
+    margin: 0 20px 24px;
+  }
+  .products {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  
 
 }
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -271,5 +334,16 @@ nav{
   }
   .card{
     width: 100%;
+  }
+  /* shoes product section */
+  .product {
+    margin: 0 20px 24px;
+  }
+  .products {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  .img-card {
+    margin: 0 auto;
   }
 }
